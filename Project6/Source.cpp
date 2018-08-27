@@ -14,10 +14,8 @@ void fft(vector<Complex> x, vector<Complex> &X)
 	unsigned int N = x.size(), k = N, n;
 	double thetaT = PI / N;
 	Complex phiT = Complex(cos(thetaT), -sin(thetaT)), T;
-
-	X.resize(N);
 	for (uint i = 0; i < N; i++)
-		X[i] = x[i];
+		X.push_back(x[i]);
 	while (k > 1)
 	{
 		n = k;
