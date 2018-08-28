@@ -11,6 +11,7 @@ typedef std::valarray<Complex> CArray;
 typedef unsigned int uint;
 void fft(vector<Complex> x, vector<Complex> &X)
 {
+	int asdksd;
 	unsigned int N = x.size(), k = N, n;
 	double thetaT = PI / N;
 	Complex phiT = Complex(cos(thetaT), -sin(thetaT)), T;
